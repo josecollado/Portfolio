@@ -1,12 +1,19 @@
-import React from 'react'
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import Main from './components/Main';
 
-
-function App() {
-
-
+const App = () => {
   return (
-   <p>Hello World !</p>
-  )
-}
+    <div className='container'>
+      <div className='sidebar'>
+        <Sidebar />
+      </div>
+      <div className='main'>
+        <Main />
+      </div>
 
-export default App
+    </div>
+  );
+};
+
+export default App;

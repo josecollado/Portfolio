@@ -1,22 +1,10 @@
-import React,{useState} from 'react'
-
+import React, {useState} from 'react'
+import MainContent from '../assets/MainContent'
 
 
 const Main = () => {
-    const htmlTags = ["<html>","<body>",'<h1>','</h1>','<h2>','</h2>','<button>','</button>',"</body>","</html>"]
     return (
-            <div>
-
-                   <ul>
-                       {htmlTags.map(element => {
-                           let tag = element.split('')
-                           return (
-                               <li key={htmlTags.indexOf(element)} className={'tag' + htmlTags.indexOf(element)}>{element}</li>
-                           )
-                       })}
-                   </ul>
-            
-            </div>
+        <MainContent />
     )
 }
 

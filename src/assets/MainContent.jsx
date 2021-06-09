@@ -46,7 +46,7 @@ const MainContent = () => {
   }, []);
 
   return (
-    <div>
+    <div className=''>
       <div className='top-html'>{`<html>`}</div>
       <div className='top-body'>{`<body>`}</div>
 

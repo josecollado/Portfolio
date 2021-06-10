@@ -5,25 +5,25 @@ import linkedin from './images/linkedin.png';
 
 const Links = () => {
   return (
-    <div className='links'>
+    <div className='flex flex-col bottom-0 space-y-2 place-items-center mt-auto border-red-600 border-solid border-4'>
       <a
         href='https://github.com/josecollado'
         target='_blank'
-        className='github'
+        className='github object-fill h-11 w-11'
       >
         <img src={github} alt='Github' />
       </a>
       <a
         href='https://www.linkedin.com/in/jose-collado/'
         target='_blank'
-        className='linkedin'
+        className='linkedin  object-fill h-11 w-11'
       >
         <img src={linkedin} alt='Linkedin' />
       </a>
       <a
         href='https://twitter.com/joser_ce'
         target='_blank'
-        className='twitter'
+        className='twitter object-fill h-11 w-11'
       >
         <img src={twitter} alt='Twitter' />
       </a>

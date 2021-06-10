@@ -46,7 +46,7 @@ const MainContent = () => {
   }, []);
 
   return (
-    <div className=''>
+    <div className='border-red-600 border-solid border-4'>
       <div className='top-html'>{`<html>`}</div>
       <div className='top-body'>{`<body>`}</div>
 

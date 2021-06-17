@@ -4,11 +4,11 @@ import Main from './components/Main';
 
 const App = () => {
   return (
-    <div className='container m-0 flex flex-row  border-red-600 border-solid border-4'>
+    <div className='m-0  min-h-screen flex flex-row  border-purple-900 border-solid border-4'>
       <div className='bg-green-700'>
         <Sidebar />
       </div>
-      <div className='bg-green-300 w-full'>
+      <div className='sol bg-green-300  w-screen max-h-screen'>
         <Main />
       </div>
 

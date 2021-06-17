@@ -5,7 +5,7 @@ import linkedin from './images/linkedin.png';
 
 const Links = () => {
   return (
-    <div className='flex flex-col bottom-0 space-y-2 place-items-center mt-auto border-red-600 border-solid border-4'>
+    <div className='flex flex-col bottom-0 space-y-4 place-items-center mt-auto border-red-600 border-solid border-4'>
       <a
         href='https://github.com/josecollado'
         target='_blank'

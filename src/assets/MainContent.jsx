@@ -1,9 +1,12 @@
-import React from 'react';
+import React , {useState}from 'react';
 import Typed from 'typed.js';
 import {Button } from '@material-ui/core'
-import Icon from '@material-ui/core/Icon';
+import {ContactModal} from '../add-on/Modal'
 
 const MainContent = () => {
+  const [open, setOpen] = useState(false)
+  const handleOpen = () => setOpen(true)
+  const handleClose = () => setOpen(false)
   const titleElement = React.useRef(null),
     titleRef = React.useRef(null),
     scrollElement = React.useRef(null),
@@ -66,7 +69,8 @@ const MainContent = () => {
         <div className='html-tag mb-20 pl-5  animate'>{`</h2>`}</div>
         <div className='pl-20 html-tag animate'>{`<button>`}</div>
         <div className=' ml-28 m-3 main'>
-          <Button variant='outlined' ><strong>Get In Touch</strong></Button>
+          <Button variant='outlined' onClick={handleOpen} ><strong>Get In Touch</strong></Button>
+          <ContactModal open={open} handleClose={handleClose} />
         </div>
         <div className='pl-20 html-tag animate'>{`</button>`}</div>
       </div>

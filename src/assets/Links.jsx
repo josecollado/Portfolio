@@ -1,31 +1,28 @@
 import React from 'react';
-import twitter from './images/twitter.png';
-import github from './images/github.png';
-import linkedin from './images/linkedin.png';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const Links = () => {
   return (
-    <div className='flex flex-col bottom-0 space-y-4 place-items-center mt-auto border-red-600 border-solid border-4'>
+    <div className='flex flex-col bottom-0 space-y-4 place-items-center mt-auto pb-2'>
       <a
         href='https://github.com/josecollado'
         target='_blank'
-        className='github object-fill h-11 w-11'
       >
-        <img src={github} alt='Github' />
+         <GitHubIcon fontSize='large'/>
       </a>
       <a
         href='https://www.linkedin.com/in/jose-collado/'
         target='_blank'
-        className='linkedin  object-fill h-11 w-11'
       >
-        <img src={linkedin} alt='Linkedin' />
+        <LinkedInIcon fontSize='large'/>
       </a>
       <a
         href='https://twitter.com/joser_ce'
         target='_blank'
-        className='twitter object-fill h-11 w-11'
       >
-        <img src={twitter} alt='Twitter' />
+        <TwitterIcon fontSize='large' />
       </a>
     </div>
   );

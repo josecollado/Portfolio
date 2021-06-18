@@ -1,29 +1,29 @@
 import React from 'react'
 import logo from '../assets/images/logo1.png'
 import Links from '../assets/Links'
-import homeIcon from '../assets/images/home.png'
-import selfIcon from '../assets/images/user.png'
-import folderIcon from '../assets/images/folder.png'
-import letter from '../assets/images/letter.png'
+import PersonSharpIcon from '@material-ui/icons/PersonSharp';
+import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
+import ContactMailRoundedIcon from '@material-ui/icons/ContactMailRounded';
+import PermMediaRoundedIcon from '@material-ui/icons/PermMediaRounded';
 
 const Sidebar = () => {
     return (
-        <div className='flex flex-col border-red-900 border-solid border-4 min-h-full w-18'>
-            <div className='logo object-fill h-32 w-32 -mx-4 border-red-600 border-solid border-4 place-items-center mb-auto'>
-                <img src={logo} title='Jose Logo'/>
+        <div className='flex flex-col min-h-full w-18'>
+            <div className='logo object-fill h-32 w-32 -mx-4  -mt-4 top-0 place-items-center mb-auto'>
+                <img src={logo} title='Logo'/>
             </div>
-            <div className='flex flex-col place-items-center border-red-900 border-solid border-4 space-y-20'> 
-                <a href='#' className='object-fill h-9 w-9'>
-                    <img src={homeIcon} title='Home Page'/>
+            <div className='flex flex-col place-items-center space-y-20'> 
+                <a href='#' className='object-fill h-9 w-9 ' title='Home Page'>
+                    <HomeRoundedIcon fontSize='large' />
                  </a>
-                <a href='#' className='object-fill h-9 w-9'>
-                    <img src={selfIcon} title='About Me'/>
+                <a href='#' className='object-fill h-9 w-9' title='About Me'>
+                    <PersonSharpIcon fontSize='large' /> 
                 </a>
-                <a href='#' className='object-fill h-9 w-9'>
-                    <img src={folderIcon} title='Projects'/>
+                <a href='#' className='object-fill h-9 w-9' title='Projects'>
+                    <PermMediaRoundedIcon fontSize='large' />
                 </a>
-                <a href='#' className='object-fill h-9 w-9'>
-                    <img src={letter} title='Contact Me'/>
+                <a href='#' className='object-fill h-9 w-9' title='Contact Me'>
+                   <ContactMailRoundedIcon fontSize='large' />
                 </a>
             </div>
             <Links />

@@ -42,6 +42,12 @@ export const ContactModal = ({open, handleClose}) => {
       return setNameValue(value)
     }
 
+    const handleClick = () =>{
+      // need to work on handle click function
+      // would like to send data to db and then email or text me 
+      // about my new message or update me with db mail count
+    }
+
   const body = (
     <div style={modalStyle} className={classes.paper}>
       <div className='flex flex-col w-3/4 main place-items-center py-10 '>
@@ -79,7 +85,7 @@ export const ContactModal = ({open, handleClose}) => {
         />
         <div className=''>
 
-        <Button variant='outlined' className='w-full'><SendIcon/></Button>
+        <Button variant='outlined' className='w-full' onClick={handleClick}  ><SendIcon/></Button>
         </div>
         
 

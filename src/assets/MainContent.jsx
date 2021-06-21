@@ -56,27 +56,27 @@ const MainContent = () => {
   }, []);
 
   return (
-    <div className=' min-h-screen '>
+    <div className=' min-h-full '>
       <div className='html-tag pl-5 animate'>{`<html>`}</div>
-      <div className=' html-tag pl-8 top-0 mb-auto pb-10 animate '>{`<body>`}</div>
+      <div className=' html-tag pl-8 top-0  animate '>{`<body>`}</div>
 
       <div className=' '>
         <div className='html-tag mt-36 pl-6 animate'>{`<h1>`}</div>
         <div className=' pl-9 main  text-6xl m-3' ref={titleElement} />
-        <div className='html-tag pl-6 animate'>{`</h1>`}</div>
+        <div className='html-tag pl-9 animate'>{`</h1>`}</div>
         <div className='html-tag pl-5 animate'>{`<h2>`}</div> 
         <div className='pl-14 main text-lg m-3' ref={scrollElement} />
-        <div className='html-tag mb-20 pl-5  animate'>{`</h2>`}</div>
+        <div className='html-tag mb-10 pl-8 animate'>{`</h2>`}</div>
         <div className='pl-20 html-tag animate'>{`<button>`}</div>
         <div className=' ml-28 m-3 main'>
           <Button variant='outlined' onClick={handleOpen} ><strong>Get In Touch</strong></Button>
           <ContactModal open={open} handleClose={handleClose} />
         </div>
-        <div className='pl-20 html-tag animate'>{`</button>`}</div>
+        <div className=' pl-24 html-tag animate'>{`</button>`}</div>
       </div>
 
-      <div className=' html-tag pt-16 mb-auto bottom-0 pl-8 animate'>{`</body>`}</div>
-      <div className=' html-tag mb-auto bottom-0 pl-5 animate' >{`</html>`}</div>
+      <div className=' m-auto html-tag pb-3  pl-8 animate'>{`</body>`}</div>
+      <div className='m-auto html-tag pl-5 animate ' >{`</html>`}</div>
     </div>
   );
 };

@@ -7,14 +7,7 @@ import ContactMailRoundedIcon from '@material-ui/icons/ContactMailRounded';
 import PermMediaRoundedIcon from '@material-ui/icons/PermMediaRounded';
 import { ContactModal } from '../add-on/Modal';
 
-
-
-
-const Sidebar = () => {
-    const [projectsView, setProjectsView] = useState(false);
-    const [homeView, setHomeView] = useState(false);
-    const [aboutView, setAboutView] = useState(false);
-
+const Sidebar = ({ setAboutView, setHomeView, setProjectsView }) => {
   const [open, setOpen] = useState(false);
 
   const handleClick = (value) => {
@@ -40,9 +33,9 @@ const Sidebar = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
-    <div className='flex flex-col min-h-full w-18'>
-      <div className='logo object-fill h-32 w-32 -mx-4  -mt-4 top-0 place-items-center mb-auto'>
-        <img src={logo} title='Logo' />
+    <div className='flex flex-col h-full w-18'>
+      <div className='logo object-fill h-32 w-32 -mx-4  -mt-4 top-0 place-items-center mb-auto sidebar'>
+        <img src={logo} title='Logo' onClick={()=>handleClick('home')}/>
       </div>
       <div className='flex flex-col place-items-center space-y-20'>
         <HomeRoundedIcon

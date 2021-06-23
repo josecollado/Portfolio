@@ -14,15 +14,15 @@ const HomePage = () =>{
           preserveAspectRatio: 'xMidYMid slice',
         },
       };
-
       return (
         <div className='min-h-screen relative'>
-        <div className='absolute'>
+        <div className='absolute z-0'>
           <MainContent />
         </div>
-        <div className=' z-10 w-1/2 right-0 float-right min-h-screen  pt-48 '>
-          <Lottie options={defaultOptions} height={600} width={600} />
+        <div className='code-desk  border-black border-solid border-2 z-10 float-right lg:pt-36 xl:mr-36 xl:pt-60 lg:mr-16 '>
+          <Lottie options={defaultOptions} height={550} width={450} />
         </div>
+        
       </div>
       )
 }

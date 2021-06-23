@@ -2,8 +2,8 @@ import React from 'react'
 
 const Projects = () =>{
     return (
-        <div className='min-h-screen relative'>
-        hello projects page
+        <div className='min-h-screen relative '>
+        <div className=' flex flex-col  border-black border-solid border-2'>hello</div>
       </div>
     )
 }

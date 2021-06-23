@@ -33,11 +33,11 @@ const Sidebar = ({ setAboutView, setHomeView, setProjectsView }) => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
-    <div className='flex flex-col h-full w-18'>
+    <div className='side-nav flex flex-col h-full w-18'>
       <div className='logo object-fill h-32 w-32 -mx-4  -mt-4 top-0 place-items-center mb-auto sidebar'>
         <img src={logo} title='Logo' onClick={()=>handleClick('home')}/>
       </div>
-      <div className='flex flex-col place-items-center space-y-20'>
+      <div className='flex flex-col place-items-center lg:space-y-20 md:space-y-9 '>
         <HomeRoundedIcon
           fontSize='large'
           className='sidebar object-fill h-9 w-9 contact'

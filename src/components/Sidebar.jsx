@@ -29,7 +29,7 @@ const Sidebar = ({ setAboutView, setHomeView, setProjectsView }) => {
       setHomeView(false);
     }
   };
-
+  let width = window.innerWidth
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
@@ -37,30 +37,30 @@ const Sidebar = ({ setAboutView, setHomeView, setProjectsView }) => {
       <div className='logo object-fill h-32 w-32 -mx-4  -mt-4 top-0 place-items-center mb-auto sidebar'>
         <img src={logo} title='Logo' onClick={()=>handleClick('home')}/>
       </div>
-      <div className='flex flex-col place-items-center lg:space-y-20 md:space-y-9 '>
+      <div className='flex flex-col place-items-center lg:space-y-20 md:space-y-14 '>
         <HomeRoundedIcon
-          fontSize='large'
-          className='sidebar object-fill h-9 w-9 contact'
+          fontSize={ width < 770 ? 'default' : 'large'}
+          className='sidebar '
           titleAccess='Home Page'
           onClick={() => handleClick('home')}
         />
         <PersonSharpIcon
-          fontSize='large'
-          className='sidebar object-fill h-9 w-9'
+          fontSize={ width < 770 ? 'default' : 'large'}
+          className='sidebar '
           titleAccess='About Me'
           onClick={() => handleClick('user')}
         />
         <PermMediaRoundedIcon
-          fontSize='large'
-          className='sidebar object-fill h-9 w-9'
+          fontSize={ width < 770 ? 'default' : 'large'}
+          className='sidebar '
           titleAccess='Projects'
           onClick={() => handleClick('projects')}
         />
 
         <ContactMailRoundedIcon
-          fontSize='large'
+          fontSize={ width < 770 ? 'default' : 'large'}
           type='button'
-          className='sidebar object-fill h-9 w-9'
+          className='sidebar '
           onClick={handleOpen}
           titleAccess='Contact Me'
         />

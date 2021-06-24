@@ -19,7 +19,7 @@ const HomePage = () =>{
         <div className='absolute z-0'>
           <MainContent />
         </div>
-        <div className='code-desk  border-black border-solid border-2 z-10 float-right lg:pt-36 xl:mr-36 xl:pt-60 lg:mr-16 '>
+        <div className='code-desk  z-10 float-right lg:pt-36 xl:mr-36 xl:pt-60 lg:mr-16 '>
           <Lottie options={defaultOptions} height={550} width={450} />
         </div>
         

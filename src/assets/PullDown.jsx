@@ -7,13 +7,8 @@ const PullDown = () => {
     console.log('clicked');
   };
   return (
-    <div className='absolute pull-down-bar w-full  text-center sm:hidden'>
-<a href='#' onClick={handleClick}>
-    <div>
-
-        <KeyboardArrowDownIcon fontSize='large' />
-    </div>
-</a>
+    <div className='absolute pull-down-bar w-full  text-center sm:hidden ' onClick={handleClick}>
+      <KeyboardArrowDownIcon fontSize='large' />
     </div>
   );
 };

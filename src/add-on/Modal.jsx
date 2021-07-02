@@ -71,8 +71,8 @@ export const ContactModal = ({ open, handleClose }) => {
         </div>
         <div className='p-3 text-center py-10'>
           <AlternateEmailIcon fontSize='default' className='' />:{' '}
-          <a href='mailto:' className=''>
-            Email
+          <a href='mailto:Jose@JoseR.io' >
+            Jose@JoseR.io
           </a>
         </div>
         <div className='pt-3 w-full text-center'>

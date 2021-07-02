@@ -70,15 +70,15 @@ export const ContactModal = ({ open, handleClose }) => {
           Happy to connect and talk more!
         </div>
         <div className='p-3 text-center py-10'>
-          <AlternateEmailIcon fontSize='default' className='' />:{' '}
-          <a href='mailto:Jose@JoseR.io' >
+          <AlternateEmailIcon fontSize='default'  />:{' '}
+          <a href='mailto:Jose@JoseR.io' className=' hover:text-blue-700'>
             Jose@JoseR.io
           </a>
         </div>
         <div className='pt-3 w-full text-center'>
           <LinkedInIcon fontSize='default' className='' />{' '}
           <a
-            className=''
+            className=' hover:text-blue-700'
             href='https://www.linkedin.com/in/jose-collado/'
             target='_blank'
           >

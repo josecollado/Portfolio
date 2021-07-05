@@ -7,7 +7,13 @@ import ContactMailRoundedIcon from '@material-ui/icons/ContactMailRounded';
 import PermMediaRoundedIcon from '@material-ui/icons/PermMediaRounded';
 import { ContactModal } from '../add-on/Modal';
 
-const Sidebar = ({ setAboutView, setHomeView, setProjectsView }) => {
+const Sidebar = ({
+  setAboutView,
+  setHomeView,
+  setProjectsView,
+  messageSent,
+  handleMessage,
+}) => {
   const [open, setOpen] = useState(false);
 
   const handleClick = (value) => {
@@ -29,42 +35,47 @@ const Sidebar = ({ setAboutView, setHomeView, setProjectsView }) => {
       setHomeView(false);
     }
   };
-  let width = window.innerWidth
+  let width = window.innerWidth;
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
     <div className='side-nav flex flex-col h-full w-18'>
       <div className='logo object-fill h-32 w-32 -mx-4  -mt-4 top-0 place-items-center mb-auto sidebar'>
-        <img src={logo} title='Logo' onClick={()=>handleClick('home')}/>
+        <img src={logo} title='Logo' onClick={() => handleClick('home')} />
       </div>
       <div className='flex flex-col place-items-center lg:space-y-20 md:space-y-14 '>
         <HomeRoundedIcon
-          fontSize={ width < 770 ? 'default' : 'large'}
+          fontSize={width < 770 ? 'default' : 'large'}
           className='sidebar '
           titleAccess='Home Page'
           onClick={() => handleClick('home')}
         />
         <PersonSharpIcon
-          fontSize={ width < 770 ? 'default' : 'large'}
+          fontSize={width < 770 ? 'default' : 'large'}
           className='sidebar '
           titleAccess='About Me'
           onClick={() => handleClick('user')}
         />
         <PermMediaRoundedIcon
-          fontSize={ width < 770 ? 'default' : 'large'}
+          fontSize={width < 770 ? 'default' : 'large'}
           className='sidebar '
           titleAccess='Projects'
           onClick={() => handleClick('projects')}
         />
 
         <ContactMailRoundedIcon
-          fontSize={ width < 770 ? 'default' : 'large'}
+          fontSize={width < 770 ? 'default' : 'large'}
           type='button'
           className='sidebar '
           onClick={handleOpen}
           titleAccess='Contact Me'
         />
-        <ContactModal open={open} handleClose={handleClose} />
+        <ContactModal
+          open={open}
+          handleClose={handleClose}
+          messageSent={messageSent}
+          handleMessage={handleMessage}
+        />
       </div>
 
       <Links />

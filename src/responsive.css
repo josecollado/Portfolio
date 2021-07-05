@@ -6,3 +6,28 @@
     }
 
   }
+
+  @media only screen and (max-height: 1024px) {
+    .code-desk{
+        padding-top: 13rem;
+
+    }
+    .h1-tag{
+        padding-top: 10rem;
+    }
+
+  }
+
+  @media only screen and (max-height: 1366px) {
+    .code-desk{
+        padding-top: 13rem;
+
+    }
+    .h1-tag{
+        padding-top: 5rem;
+    }
+
+  }
+
+
+  

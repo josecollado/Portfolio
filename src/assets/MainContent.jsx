@@ -3,7 +3,7 @@ import Typed from 'typed.js';
 import {Button } from '@material-ui/core'
 import {ContactModal} from '../add-on/Modal'
 
-const MainContent = () => {
+const MainContent = ({messageSent, handleMessage}) => {
   const [open, setOpen] = useState(false)
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
@@ -61,16 +61,16 @@ const MainContent = () => {
       <div className=' html-tag pl-8 top-0  animate '>{`<body>`}</div>
 
       <div className=' '>
-        <div className='html-tag mt-8 sm:mt-36 md:mt-8 pl-6 animate xl:mt-10 '>{`<h1>`}</div>
+        <div className='html-tag h1-tag mt-5 sm:mt-36 md:mt-8 pl-6 animate xl:mt-10 '>{`<h1>`}</div>
         <div className=' pl-5 md:pl-2 lg:pl-9 main text-3xl md:text-3xl lg:text-5xl sm:text-4xl m-3 xl:text-6xl ' ref={titleElement} />
         <div className='html-tag pl-9 animate'>{`</h1>`}</div>
-        <div className='html-tag pl-5 animate mt-3  md:mt-3 xl:mt-0'>{`<h2>`}</div> 
+        <div className='html-tag pl-5 animate mt-3  m∂d:mt-3 xl:mt-0'>{`<h2>`}</div> 
         <div className='pl-10 md:pl-5 lg:pl-14 main text-lg m-3 xl:text-2xl ' ref={scrollElement} />
         <div className='html-tag mb-10 sm:mb-20 pl-8 animate md:mb-9'>{`</h2>`}</div>
         <div className='pl-20 html-tag animate btn'>{`<button>`}</div>
         <div className=' ml-28 m-3 main btn'>
           <Button variant='outlined' onClick={handleOpen} ><strong>Get In Touch</strong></Button>
-          <ContactModal open={open} handleClose={handleClose} />
+          <ContactModal open={open} handleClose={handleClose} messageSent={messageSent} handleMessage={handleMessage}/>
         </div>
         <div className=' pl-24 html-tag animate btn lg:mb-10  xl:mb-3'>{`</button>`}</div>
       </div>

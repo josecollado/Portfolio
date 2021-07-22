@@ -31,7 +31,6 @@ export const ContactModal = ({
   const [nameValue, setNameValue] = useState('');
   const [emailValue, setEmailValue] = useState('');
   const [messageValue, setMsgValue] = useState('');
-
   const [clicked, setClicked] = useState(false);
   const handleMSGValue = (e) => {
     const value = e.target.value;
@@ -77,22 +76,22 @@ export const ContactModal = ({
         <div className='w-full mt-7 text-center text-md  '>
           Want to get in touch?
           <br />
-          Send me a message
+          Send a message
           <br />
           through E-mail, LinkedIn,
           <br />
-          or on my site.
+          or on the site.
           <br />
           Happy to connect and talk more!
         </div>
         <div className='p-3 text-center py-10'>
-          <AlternateEmailIcon fontSize='default' />:{' '}
+          <AlternateEmailIcon fontSize='default' />-{' '}
           <a href='mailto:Jose@JoseR.io' className=' hover:text-blue-700'>
             Jose@JoseR.io
           </a>
         </div>
         <div className='pt-3 w-full text-center'>
-          <LinkedInIcon fontSize='default' className='' />{' '}
+          <LinkedInIcon fontSize='default' className='' />-{' '}
           <a
             className=' hover:text-blue-700'
             href='https://www.linkedin.com/in/jose-collado/'
@@ -102,7 +101,7 @@ export const ContactModal = ({
           </a>
         </div>
       </div>
-      <div className='p-10 flex flex-col space-y-4 w-full place-content-center p-3 '>
+      <div className='p-10 flex flex-col space-y-4 w-full place-content-center '>
         <TextField
           onChange={handleNameValue}
           id='outlined-size-small 1'

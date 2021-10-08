@@ -3,7 +3,7 @@ import HomePage from '../assets/HomePage';
 import Projects from '../assets/Projects';
 import AboutMe from '../assets/About';
 
-const Main = ({
+const Content = ({
   homeView,
   aboutView,
   projectsView,
@@ -21,4 +21,4 @@ const Main = ({
   }
 };
 
-export default Main;
+export default Content;

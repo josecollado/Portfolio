@@ -1,7 +1,7 @@
 import React , {useState}from 'react';
 import Typed from 'typed.js';
 import {Button } from '@material-ui/core'
-import {ContactModal} from '../add-on/Modal'
+import {ContactModal} from '../../add-on/Modal'
 
 const MainContent = ({messageSent, handleMessage}) => {
   const [open, setOpen] = useState(false)

@@ -1,5 +1,5 @@
 import React from 'react';
-import MainContent from './MainContent';
+import MainContent from './Content/MainContent';
 import Lottie from 'react-lottie';
 import codeDesk from '../lotties/code-desk.json';
 

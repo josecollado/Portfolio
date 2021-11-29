@@ -23,7 +23,7 @@ const App = () => {
             className='object-fill h-28 w-30  mx-auto'
           />
       
-        Mobile version is currently in construction...
+        Mobile version is currently under construction...
       </div>
       <div className='side bg-blueGray-400 '>
         <Sidebar

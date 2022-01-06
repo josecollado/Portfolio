@@ -1,37 +1,35 @@
-
-
 @media only screen and (max-width: 750px) {
-    .code-desk,.side-nav,.btn, .side, .main{
-        display: none;
-    }
-    .mobile-placeholder{
-        display: block;
-    }
-
+  .code-desk,
+  .side-nav,
+  .btn,
+  .side,
+  .main {
+    display: none;
   }
-
-  @media only screen and (max-height: 1024px) {
-    .code-desk{
-        padding-top: 13rem;
-
-    }
-    .h1-tag{
-        padding-top: 10rem;
-    }
-  
-
+  .mobile-placeholder {
+    display: block;
   }
-
-  @media only screen and (max-height: 1366px) {
-    .code-desk{
-        padding-top: 13rem;
-
+}
+@media only screen and (min-width: 768px){
+    .about-me-box{
+        height: 750px;
     }
-    .h1-tag{
-        padding-top: 5rem;
-    }
-    
+}
+
+@media only screen and (max-height: 1024px) {
+  .code-desk {
+    padding-top: 13rem;
   }
+  .h1-tag {
+    padding-top: 10rem;
+  }
+}
 
-
-  
+@media only screen and (max-height: 1366px) {
+  .code-desk {
+    padding-top: 13rem;
+  }
+  .h1-tag {
+    padding-top: 5rem;
+  }
+}

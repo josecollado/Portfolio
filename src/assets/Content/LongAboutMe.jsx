@@ -2,7 +2,7 @@ import React from 'react';
 
 const LongAboutMe = () => {
   return (
-    <div>
+    <div className='p-5 mt-16'>
       Growing up in New York City, Jose loved many things, but his top 3 were
       always ; Technology, Cars and Art. He started his career working as a bike
       messenger, which allowed him to meet a variety of people. He was inspired

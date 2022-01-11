@@ -1,4 +1,4 @@
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 767px) {
   .code-desk,
   .side-nav,
   .btn,
@@ -12,7 +12,7 @@
 }
 @media only screen and (min-width: 768px){
     .about-me-box{
-        height: 750px;
+        height: 680px;
     }
 }
 

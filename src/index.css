@@ -43,6 +43,8 @@ body{
    cursor: pointer;
 }
 
+
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .about-me-box::-webkit-scrollbar {
     display: none;

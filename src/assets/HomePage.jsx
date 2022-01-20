@@ -13,7 +13,7 @@ const HomePage = ({ messageSent, handleMessage }) => {
     },
   };
   return (
-    <div className='min-h-screen relative'>
+    <div className='min-h-screen relative '>
       <div className='absolute z-0'>
         <MainContent messageSent={messageSent} handleMessage={handleMessage} />
       </div>

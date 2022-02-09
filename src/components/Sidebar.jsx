@@ -35,7 +35,7 @@ const Sidebar = ({
       setHomeView(false);
     }
   };
-  let width = window.innerWidth;
+  
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
@@ -43,28 +43,28 @@ const Sidebar = ({
       <div className='logo object-fill h-32 w-32 -mx-4 top-0 place-items-center mb-auto sidebar'>
         <img src={logo} title='Logo' onClick={() => handleClick('home')} />
       </div>
-      <div className='flex flex-col place-items-center lg:space-y-20 md:space-y-14 '>
+      <div className='flex flex-col place-items-center lg:space-y-16 md:space-y-14 '>
         <HomeRoundedIcon
-          fontSize={width < 770 ? 'default' : 'large'}
+          fontSize={'default'}
           className='sidebar '
           titleAccess='Home Page'
           onClick={() => handleClick('home')}
         />
         <PersonSharpIcon
-          fontSize={width < 770 ? 'default' : 'large'}
+          fontSize={'default'}
           className='sidebar '
           titleAccess='About Me'
           onClick={() => handleClick('user')}
         />
         <PermMediaRoundedIcon
-          fontSize={width < 770 ? 'default' : 'large'}
+          fontSize={'default'}
           className='sidebar '
           titleAccess='Projects'
           onClick={() => handleClick('projects')}
         />
 
         <ContactMailRoundedIcon
-          fontSize={width < 770 ? 'default' : 'large'}
+          fontSize={'default'}
           type='button'
           className='sidebar '
           onClick={handleOpen}

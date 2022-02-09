@@ -13,9 +13,9 @@ const App = () => {
     return setMessageSent(true);
   };
   return (
-    <div className='flex flex-row  '>
+    <div className='flex flex-row min-h-screen '>
       <TempMobileView />
-      <div className='side bg-blueGray-400 '>
+      <div className='side bg-blueGray-300  '>
         <Sidebar
           setProjectsView={setProjectsView}
           setAboutView={setAboutView}
@@ -25,7 +25,7 @@ const App = () => {
         />
         <PullDown />
       </div>
-      <div className='main bg-blueGray-500  w-screen'>
+      <div className='main bg-blueGray-400  w-screen'>
         <Content
           aboutView={aboutView}
           homeView={homeView}

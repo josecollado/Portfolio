@@ -9,7 +9,7 @@ import emailjs from 'emailjs-com';
 const useStyles = makeStyles((theme) => ({
   paper: {
     position: 'absolute',
-    width: 750,
+    width: 700,
     backgroundColor: theme.palette.background.paper,
     border: '2px solid #000',
     borderRadius: '15px',
@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2, 4, 3),
     display: 'flex',
     margin: 'auto',
+    
   },
 }));
 

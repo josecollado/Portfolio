@@ -7,8 +7,6 @@ const HomePage = ({ messageSent, handleMessage }) => {
   const width = window.innerWidth
   const style = {
     width: width < 840 ? 350 : 550
-  
-    
   }
 
   return (

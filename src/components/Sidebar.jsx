@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../assets/images/logo-main.png';
+import logo from '../assets/images/logo-main.jpeg';
 import Links from '../assets/Links';
 import PersonSharpIcon from '@material-ui/icons/PersonSharp';
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';

@@ -20,7 +20,7 @@ const Links = () => {
         <LinkedInIcon fontSize={'default'}/>
       </a>
       <a
-        href='https://twitter.com/joser_ce'
+        href='https://twitter.com/0xJosr'
         target='_blank'
       >
         <TwitterIcon fontSize={'default'}/>

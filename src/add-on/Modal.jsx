@@ -33,13 +33,18 @@ export const ContactModal = ({
   const [emailValue, setEmailValue] = useState('');
   const [messageValue, setMsgValue] = useState('');
   const [clicked, setClicked] = useState(false);
+  const [invalidEmail, isValidEmail] = useState(false);
   const handleMSGValue = (e) => {
     const value = e.target.value;
     return setMsgValue(value);
   };
   const handleEmailValue = (e) => {
     const value = e.target.value;
-    return setEmailValue(value);
+    if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
+      setEmailValue(value)
+      isValidEmail(true)
+    }
+    else isValidEmail(false)
   };
   const handleNameValue = (e) => {
     const value = e.target.value;
@@ -109,19 +114,21 @@ export const ContactModal = ({
           label='Name'
           variant='outlined'
           InputProps={{ style: { fontSize: 13 } }}
-          error={clicked === true && nameValue < 2}
-          helperText={clicked === true && nameValue < 2 ? 'Required' : ''}
+          error={clicked && nameValue < 2}
+          helperText={clicked && nameValue < 2 ? 'Required' : ''}
           className='w-60'
         />
         <TextField
           onChange={handleEmailValue}
           id='outlined-size-small 2'
-          label='E-mail'
+          label={clicked && !invalidEmail ? 'Invalid Email' : 'E-Mail'}
           variant='outlined'
           className='w-64'
           InputProps={{ style: { fontSize: 13 } }}
-          error={clicked === true && emailValue < 2}
-          helperText={clicked === true && emailValue < 2 ? 'Required' : ''}
+          error={clicked && emailValue < 2}
+          helperText={
+            clicked && emailValue < 2 && !invalidEmail ? 'Required' : ''
+          }
         />
         <TextField
           id='outlined-multiline-static'
@@ -132,8 +139,8 @@ export const ContactModal = ({
           className=' w-80 '
           onChange={handleMSGValue}
           InputProps={{ style: { fontSize: 13 } }}
-          error={clicked === true && messageValue < 2}
-          helperText={clicked === true && messageValue < 2 ? 'Required' : ''}
+          error={clicked  && messageValue < 2}
+          helperText={clicked   && messageValue < 2 ? 'Required' : ''}
         />
         <div className=''>
           {messageSent ? (

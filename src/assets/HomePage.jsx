@@ -14,7 +14,7 @@ const HomePage = ({ messageSent, handleMessage }) => {
       <div className=' z-0'>
         <MainContent messageSent={messageSent} handleMessage={handleMessage} />
       </div>
-      <div className='code-desk  z-10 absolute right-0 md:pt-72 m-auto '>
+      <div className='code-desk  z-10 absolute right-0 md:pt-72 m-auto   '>
         <Lottie animationData={codeDesk} autoPlay={true} loop={true} style={style}  />
       </div>
     </div>

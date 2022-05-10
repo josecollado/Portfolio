@@ -4,29 +4,44 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
-export const ProjectCard = ({ projectName, projectFrontImage, bodyText }) => {
+export const ProjectCard = ({
+  projectName,
+  projectFrontImage,
+  bodyText,
+  url,
+}) => {
   const settings = {
     maxWidth: 600,
     backgroundColor: '#cbd5e1',
-    borderRadius: '2%',
-    margin:'auto',
+    borderRadius: '15px',
+    margin: 'auto',
     marginTop: '250px',
-    padding: '10px',
+    padding: '35px',
     paddingBottom: '25px',
-    
   };
   return (
-    <div >
-      <Card sx={settings}> 
+    <div>
+      <Card sx={settings}>
         <CardActionArea>
           <CardMedia
             component='img'
             image={projectFrontImage}
             alt={`${projectName}`}
+            style={{ borderRadius: '20px' }}
+            className='md:h-80'
           />
           <CardContent>
-            <Typography gutterBottom variant='h5' component='div'>
+            <a href={url} target='_blank'>
+              <GitHubIcon fontSize={'default'} />
+            </a>
+            <Typography
+              gutterBottom
+              variant='h5'
+              component='div'
+              className='py-5 '
+            >
               {projectName}
             </Typography>
             <Typography variant='body1' color='text.secondary'>

@@ -1,8 +1,8 @@
 import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
-import { ProjectCard } from '../add-on/CarouselCard';
-import VinylHuntFrontPage from './images/complete.jpg';
+import { ProjectCard } from '../add-on/ProjectCard';
+import VinylHuntFrontPage from './images/front.jpg';
 import commerceFrontPage from './images/e-commerce.gif';
 
 const Projects = () => {

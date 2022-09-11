@@ -8,8 +8,8 @@ import commerceFrontPage from './images/e-commerce.gif';
 const Projects = () => {
 
   return (
-    <div className=' relative '>
-      <div className=' absolute flex md:ml-24 md:mt-16 xl:mt-20 lg:ml-36 md:w-3/4 lg:w-100  xl:w-2/3 '>
+    <div className=' flex justify-center mt-52 '>
+      <div className='   md:w-3/4 lg:w-100  xl:w-2/3 '>
         <Carousel
           showThumbs={false}
           showStatus={false}

@@ -5,20 +5,23 @@ import { ProjectCard } from '../add-on/ProjectCard';
 import VinylHuntFrontPage from './images/front.jpg';
 import commerceFrontPage from './images/e-commerce.gif';
 
-const Projects = () => {
 
+const Projects = () => {
+  
   return (
-    <div className=' flex justify-center mt-52 '>
-      <div className='   md:w-3/4 lg:w-100  xl:w-2/3 '>
+    <div className=' flex justify-center mt-52  '>
+      <div className='  md:w-3/4 lg:w-100  xl:w-2/3 CAROUSEL-DIV ' >
         <Carousel
           showThumbs={false}
           showStatus={false}
           showIndicators={false}
           showArrows={true}
           useKeyboardArrows={true}
-          transitionTime={'1000'}
+          transitionTime={'850'}
+          swipeable={true}
+          
         >
-          <div>
+          <div >
             <ProjectCard
               projectName={'Greenfield Retail Client'}
               projectFrontImage={commerceFrontPage}
@@ -26,6 +29,7 @@ const Projects = () => {
               bodyText={
                 'Site allows a user to interact with dynamic API data through product details, reviews, and cart functionality. Built using React.JS,Redux,Express and Material UI. '
               }
+              
             />
           </div>
           <div>

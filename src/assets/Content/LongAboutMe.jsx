@@ -5,7 +5,7 @@ const LongAboutMe = () => {
     <div className=' px-16 lg:text-lg '>
       <p>
         Growing up in New York City, Jose started his career working as a
-        bike messenger, which allowed him to meet a variety of people, that then 
+        bike messenger, allowing him to meet a variety of people, that then 
         inspired him to work on his future and his passion, but just like any other
         16 year old, he didn’t know where to start. As his search began, he
         looked back to his love for cars and motorcycles and how he could relate

@@ -16,6 +16,7 @@
     "rc-hammerjs": "^0.6.10",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
+    "react-lazy-load-image-component": "^1.5.6",
     "react-responsive-carousel": "^3.2.22",
     "typed.js": "^2.0.12"
   },
